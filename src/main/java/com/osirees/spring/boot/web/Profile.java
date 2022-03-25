@@ -1,5 +1,7 @@
 package com.osirees.spring.boot.web;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 
@@ -8,6 +10,6 @@ import lombok.RequiredArgsConstructor;
 public class Profile {
 
 	private final String name;
-	private final String title;
+	@JsonIgnore final String title;
 	private final String location;
 }
